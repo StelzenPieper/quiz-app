@@ -1,3 +1,7 @@
+@import "/assets/components/quizcards/quizcards.css";
+@import "/assets/components/nav/nav.css";
+@import "/assets/components/userprofile/userprofile.css";
+
 * {
   box-sizing: border-box;
 }
@@ -9,6 +13,8 @@ html {
 
 body {
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -19,16 +25,16 @@ body {
   grid-template-rows: 10% 1fr 10%;
 }
 
+/*---------- HEADER ---------*/
 .header {
-  background-color: green;
+  box-shadow: 0 0 10px 6px rgba(242, 242, 242, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.footer {
-  background-color: blue;
-}
-
+/*---------- BODY ---------*/
 .body {
-  background-color: red;
   display: grid;
   grid-template-columns: 1fr;
   overflow: hidden;
@@ -37,4 +43,14 @@ body {
 .content {
   overflow-y: scroll;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*---------- FOOTER ---------*/
+.footer {
+  box-shadow: 0 0 10px 6px rgba(242, 242, 242, 0.8);
+  display: grid;
+  align-items: center;
 }

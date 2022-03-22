@@ -1,0 +1,14 @@
+/*---------- NAV ---------*/
+.nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+
+.uil {
+  font-size: 2rem;
+}
+
+.nav__item:focus {
+  color: hsl(214, 95%, 46%);
+}
