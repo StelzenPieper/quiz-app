@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 1fr 10%;
+}
+
+.header {
+  background-color: green;
+}
+
+.footer {
+  background-color: blue;
+}
+
+.body {
+  background-color: red;
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow: hidden;
+}
+
+.content {
+  overflow-y: scroll;
+  padding: 20px;
+}
