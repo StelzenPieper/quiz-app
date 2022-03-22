@@ -1,0 +1,40 @@
+/*---------- QUIZCARDS ---------*/
+.card {
+  margin: 20px;
+  padding: 10px 20px 10px 20px;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 6px rgba(242, 242, 242, 0.8);
+  display: flex;
+  flex-direction: column;
+}
+
+.card__hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  width: 40%;
+  max-width: 400px;
+  background: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0 10px 0;
+  box-shadow: 0 0 10px 6px rgba(242, 242, 242, 0.8);
+  align-self: center;
+}
+
+.card__taglist {
+  padding: 20px 0 10px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card__tag {
+  border-radius: 8px;
+  border: 2px solid gray;
+  padding: 5px 10px 5px 10px;
+  box-shadow: 0 0 10px 6px rgba(242, 242, 242, 0.8);
+}
