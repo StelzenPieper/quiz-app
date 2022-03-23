@@ -1,12 +1,14 @@
 @import "/assets/components/quizcards/quizcards.css";
 @import "/assets/components/nav/nav.css";
 @import "/assets/components/userprofile/userprofile.css";
+@import "/assets/components/createquestion/questioncard.css";
 
 * {
   box-sizing: border-box;
 }
 
 html {
+  font-family: "Oswald";
   margin: 0;
   padding: 0;
 }
@@ -31,6 +33,29 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header__title {
+  color: black;
+  animation: stripes 6s linear forwards alternate infinite;
+}
+
+@keyframes stripes {
+  0% {
+    color: black;
+  }
+  25% {
+    color: blue;
+  }
+  50% {
+    color: hotpink;
+  }
+  75% {
+    color: aquamarine;
+  }
+  100% {
+    color: blueviolet;
+  }
 }
 
 /*---------- BODY ---------*/
