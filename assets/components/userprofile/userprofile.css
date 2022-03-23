@@ -1,6 +1,15 @@
+.profile {
+  margin: 5% 10% 5% 10%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  overflow: hidden;
+}
+
 .profile__hero {
   margin: 20px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 50px;
 }
@@ -14,6 +23,7 @@
 
 .about {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   gap: 5px;
 }
@@ -21,6 +31,7 @@
 .skill__skills {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .skill__item {
@@ -30,6 +41,8 @@
   box-shadow: 0 0 10px 6px rgba(242, 242, 242, 0.8);
 }
 
-.btn__logout {
-  margin-top: 50px;
+.profile__logout {
+  margin: 10%;
+  display: flex;
+  justify-content: center;
 }
