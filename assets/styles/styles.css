@@ -42,7 +42,7 @@ body {
 
 @keyframes stripes {
   0% {
-    color: black;
+    color: green;
   }
   25% {
     color: blue;

@@ -17,6 +17,20 @@
   gap: 10px;
 }
 
+input[type="text"] {
+  font-family: "Oswald";
+  padding: 0 5px 0 5px;
+}
+
+textarea {
+  font-family: "Oswald";
+  padding: 0 5px 0 5px;
+}
+
+select {
+  font-family: "Osawld";
+}
+
 .user__tags {
   display: flex;
   flex-wrap: wrap;
