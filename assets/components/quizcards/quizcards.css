@@ -18,7 +18,8 @@
 }
 
 .card__question {
-  margin-left: 40px;
+  margin-bottom: 40px;
+  align-self: center;
 }
 
 .btn {
@@ -31,6 +32,24 @@
   box-shadow: 0 0 10px 6px rgba(242, 242, 242, 0.8);
   align-self: center;
   cursor: pointer;
+}
+
+.btn__answer--hide {
+  display: none;
+}
+
+.btn__answer--show {
+  display: inline;
+}
+
+.card__answer {
+  display: none;
+}
+
+.card__showanswer {
+  margin: 40px 0 40px 0;
+  display: block;
+  align-self: center;
 }
 
 .card__taglist {
@@ -50,4 +69,44 @@
   position: absolute;
   top: -22px;
   right: 40px;
+}
+
+.card__bookmark__icon {
+  fill: black;
+  width: 35px;
+  height: auto;
+  position: absolute;
+  top: -15px;
+  right: 40px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.bookmarked {
+  width: 35px;
+  height: auto;
+  position: absolute;
+  top: -15px;
+  right: 40px;
+  z-index: 100;
+  animation: bookmarked 6s linear forwards alternate infinite;
+  cursor: pointer;
+}
+
+@keyframes bookmarked {
+  0% {
+    fill: green;
+  }
+  25% {
+    fill: blue;
+  }
+  50% {
+    fill: hotpink;
+  }
+  75% {
+    fill: aquamarine;
+  }
+  100% {
+    fill: blueviolet;
+  }
 }
