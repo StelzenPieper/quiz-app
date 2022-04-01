@@ -1,32 +1,19 @@
-//query Selector BOOKMARK
-const bookmark = document.querySelector('[data-js="bookmark"]');
+import Quizcard from "../components/quizcards/quizcards.js";
 
-//query Selector SHOW-ANSWER Button
-const showAnswerBtn = document.querySelector('[data-js="showAnswerBtn"]');
+const cardElements = document.querySelectorAll('[data-js="quiz-card"]');
 
-//query Selector SHOW-ANSWER
-const showAnswer = document.querySelector(".card__answer");
+cardElements.forEach((cardElement) => {
+    Quizcard(cardElement);
+});
 
-//query Selector HIDE-ANSWER Button
-const hideAnswerBtn = document.querySelector('[data-js="hideAnswerBtn"]');
+//import Navigation from "../components/nav/nav.js";
 
 
-//EventListener BOOKMARK-CLICK
-bookmark.addEventListener('click', () => {
-    bookmark.classList.toggle("bookmarked");
-})
+import Navigation from "../components/nav/nav.js";
 
-//EventListener SHOW-ANSWER Button
-showAnswerBtn.addEventListener('click', () => {
-    showAnswer.classList.toggle("card__showanswer");
-    showAnswerBtn.classList.toggle("btn__answer--hide");
-    hideAnswerBtn.classList.toggle("btn__answer--show");
-})
+Navigation();
 
 
-//EventListener HIDE-ANSWER Button
-hideAnswerBtn.addEventListener('click', () => {
-    showAnswer.classList.toggle("card__showanswer");
-    showAnswerBtn.classList.toggle("btn__answer--hide");
-    hideAnswerBtn.classList.toggle("btn__answer--show");
-})
+
+
+
