@@ -24,7 +24,7 @@ body {
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 10% 1fr 10%;
+  grid-template-rows: 5% 1fr 7%;
 }
 
 /*---------- HEADER ---------*/
@@ -33,6 +33,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: hsl(236, 13%, 22%);
 }
 
 .header__title {
@@ -45,7 +46,7 @@ body {
     color: green;
   }
   25% {
-    color: blue;
+    color: red;
   }
   50% {
     color: hotpink;
@@ -78,4 +79,5 @@ body {
   box-shadow: 0 0 10px 6px rgba(242, 242, 242, 0.8);
   display: grid;
   align-items: center;
+  background-color: hsl(236, 13%, 22%);
 }
