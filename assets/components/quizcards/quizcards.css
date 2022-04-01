@@ -34,19 +34,7 @@
   cursor: pointer;
 }
 
-.btn__answer--hide {
-  display: none;
-}
-
-.btn__answer--show {
-  display: inline;
-}
-
 .card__answer {
-  display: none;
-}
-
-.card__showanswer {
   margin: 40px 0 40px 0;
   display: block;
   align-self: center;
