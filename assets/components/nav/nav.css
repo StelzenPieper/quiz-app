@@ -10,6 +10,24 @@
   color: white;
 }
 
-.nav__item:focus {
-  color: hsl(214, 95%, 46%);
+.nav__item--clicked {
+  animation: selected 6s linear forwards alternate infinite;
+}
+
+@keyframes selected {
+  0% {
+    color: green;
+  }
+  25% {
+    color: red;
+  }
+  50% {
+    color: hotpink;
+  }
+  75% {
+    color: aquamarine;
+  }
+  100% {
+    color: blueviolet;
+  }
 }

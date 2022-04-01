@@ -32,7 +32,8 @@
       </div>
 
       <div class="body">
-        <div class="content">
+        <!-- MAIN SITE -->
+        <div class="main--site" data-js="home-site">
           <div class="card" data-js="quiz-card">
             <div class="card__hero">
               <h2 class="card__title">QUESTION:</h2>
@@ -207,22 +208,200 @@
             </div>
           </div>
         </div>
+
+        <!-- BOOKMARK SITE -->
+        <div class="main--bookmark hide" data-js="bookmarks-site">
+          <div class="card" data-js="quiz-card">
+            <div class="card__hero">
+              <h2 class="card__title">QUESTION:</h2>
+              <div class="card__bookmark">
+                <svg
+                  data-js="bookmark"
+                  class="card__bookmark__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16,2H8A3,3,0,0,0,5,5V21a1,1,0,0,0,.5.87,1,1,0,0,0,1,0L12,18.69l5.5,3.18A1,1,0,0,0,18,22a1,1,0,0,0,.5-.13A1,1,0,0,0,19,21V5A3,3,0,0,0,16,2Zm1,17.27-4.5-2.6a1,1,0,0,0-1,0L7,19.27V5A1,1,0,0,1,8,4h8a1,1,0,0,1,1,1Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <p class="card__question">Hey, who are you?</p>
+            <button class="btn" data-js="card-Btn">SHOW ANSWER</button>
+            <p class="card__answer hide" data-js="show-answer">
+              I am the QUIZ APP Mastermind!
+            </p>
+            <div class="card__taglist">
+              <div class="card__tag">TAG 1</div>
+              <div class="card__tag">TAG 1</div>
+              <div class="card__tag">TAG 1</div>
+              <div class="card__tag">TAG 1</div>
+            </div>
+          </div>
+
+          <div class="card" data-js="quiz-card">
+            <div class="card__hero">
+              <h2 class="card__title">QUESTION:</h2>
+              <div class="card__bookmark">
+                <svg
+                  data-js="bookmark"
+                  class="card__bookmark__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16,2H8A3,3,0,0,0,5,5V21a1,1,0,0,0,.5.87,1,1,0,0,0,1,0L12,18.69l5.5,3.18A1,1,0,0,0,18,22a1,1,0,0,0,.5-.13A1,1,0,0,0,19,21V5A3,3,0,0,0,16,2Zm1,17.27-4.5-2.6a1,1,0,0,0-1,0L7,19.27V5A1,1,0,0,1,8,4h8a1,1,0,0,1,1,1Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <p class="card__question">Hey, who are you?</p>
+            <button class="btn" data-js="card-Btn">SHOW ANSWER</button>
+            <p class="card__answer hide" data-js="show-answer">
+              I am the QUIZ APP Mastermind!
+            </p>
+            <div class="card__taglist">
+              <div class="card__tag">TAG 1</div>
+              <div class="card__tag">TAG 1</div>
+              <div class="card__tag">TAG 1</div>
+              <div class="card__tag">TAG 1</div>
+            </div>
+          </div>
+
+          <div class="card" data-js="quiz-card">
+            <div class="card__hero">
+              <h2 class="card__title">QUESTION:</h2>
+              <div class="card__bookmark">
+                <svg
+                  data-js="bookmark"
+                  class="card__bookmark__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16,2H8A3,3,0,0,0,5,5V21a1,1,0,0,0,.5.87,1,1,0,0,0,1,0L12,18.69l5.5,3.18A1,1,0,0,0,18,22a1,1,0,0,0,.5-.13A1,1,0,0,0,19,21V5A3,3,0,0,0,16,2Zm1,17.27-4.5-2.6a1,1,0,0,0-1,0L7,19.27V5A1,1,0,0,1,8,4h8a1,1,0,0,1,1,1Z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <p class="card__question">Hey, who are you?</p>
+            <button class="btn" data-js="card-Btn">SHOW ANSWER</button>
+            <p class="card__answer hide" data-js="show-answer">
+              I am the QUIZ APP Mastermind!
+            </p>
+            <div class="card__taglist">
+              <div class="card__tag">TAG 1</div>
+              <div class="card__tag">TAG 1</div>
+              <div class="card__tag">TAG 1</div>
+              <div class="card__tag">TAG 1</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CREATE SITE -->
+        <div class="main--create hide" data-js="create-site">
+          <div class="card card--question">
+            <div class="card__hero">
+              <h2 class="card__title">post your own question</h2>
+            </div>
+            <form class="form__question" action="">
+                <label for="user__question">your question:</label>
+                <input type="text" id="user__question" placeholder="your question.." required>
+                <label for="user__answer">your answer</label>
+                <textarea name="user__answer" id="user__answer cols="30" rows="10" placeholder="your answer.." required></textarea>
+                <div class="user__tags">
+                    <label for="user__tags">pick tags</label>
+                    <select id="user__tags" required>
+                        <option value="family">family</option>
+                        <option value="friends">friends</option>
+                        <option value="cars">cars</option>
+                        <option value="nature">nature</option>
+                        <option value="history">history</option>
+                        <option value="fun_fact">fun fact</option>
+                        <option value="coding">coding</option>
+                    </select>
+                    <select id="user__tags" required>
+                        <option value="family">family</option>
+                        <option value="friends">friends</option>
+                        <option value="cars">cars</option>
+                        <option value="nature">nature</option>
+                        <option value="history">history</option>
+                        <option value="fun_fact">fun fact</option>
+                        <option value="coding">coding</option>
+                    </select>
+                    <select id="user__tags" required>
+                        <option value="family">family</option>
+                        <option value="friends">friends</option>
+                        <option value="cars">cars</option>
+                        <option value="nature">nature</option>
+                        <option value="history">history</option>
+                        <option value="fun_fact">fun fact</option>
+                        <option value="coding">coding</option>
+                    </select>
+                    <select id="user__tags" required>
+                        <option value="family">family</option>
+                        <option value="friends">friends</option>
+                        <option value="cars">cars</option>
+                        <option value="nature">nature</option>
+                        <option value="history">history</option>
+                        <option value="fun_fact">fun fact</option>
+                        <option value="coding">coding</option>
+                    </select>
+                </div>
+                <input class="btn btn--submit" type="submit"></input>
+            </form>
+          </div>
+        </div>
+
+        <!-- PROFILE SITE -->
+        <div class="main--profile hide" data-js="profile-site">
+          <div class="profile">
+            <section class="profile__hero">
+              <img
+                class="profile__img"
+                src="https://source.unsplash.com/random/?face"
+                alt="user profile pic"
+              />
+              <h2 class="profile__name">Sebastian Ottow</h2>
+            </section>
+            <section class="about">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque ea
+                laboriosam fugit voluptatem facere consectetur commodi molestiae
+                saepe porro nobis dolores sunt magnam, rerum distinctio dolor.
+                Illo veritatis ratione magnam.
+              </p>
+              <h3 class="skill__title">MY SKILLS</h3>
+              <div class="skill__skills">
+                <div class="skill__item">skill 1</div>
+                <div class="skill__item">skill 2</div>
+                <div class="skill__item">skill 3</div>
+                <div class="skill__item">skill 4</div>
+              </div>
+            </section>
+            <div class="profile__logout">
+              <button class="btn btn__logout">LOGOUT</button>
+            </div>
+          </div>
+        </div>
       </div>
 
+      <!-- NAVIGATION -->
       <div class="footer">
         <footer>
           <nav class="nav">
             <div class="nav__item">
-              <a href="index.html"><i class="uil uil-estate"></i></a>
+              <a href="#home"><i class="uil uil-estate" data-js="home"></i></a>
+            </div>
+            <div class="nav__item" >
+              <a href="#bookmarks"><i class="uil uil-bookmark" data-js="bookmarks"></i></a>
             </div>
             <div class="nav__item">
-              <a href="bookmarks.html"><i class="uil uil-bookmark"></i></a>
+              <a href="#create"><i class="uil uil-edit-alt" data-js="create"></i></a>
             </div>
             <div class="nav__item">
-              <a href="create.html"><i class="uil uil-edit-alt"></i></a>
-            </div>
-            <div class="nav__item">
-              <a href="profile.html"><i class="uil uil-user"></i></a>
+              <a href="#profile" ><i class="uil uil-user" data-js="profile"></i></a>
             </div>
           </nav>
         </footer>
